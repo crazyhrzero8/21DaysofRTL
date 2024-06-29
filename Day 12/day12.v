@@ -61,20 +61,19 @@ module day12 (
   // Next state logic
   always @(*) begin
     case (state)
-      S0: next_state = x_i ? S1 : S0;
-      S1: next_state = x_i ? S2 : S0;
-      S2: next_state = x_i ? S3 : S0;
-      S3: next_state = x_i ? S3 : S4;
-      S4: next_state = x_i ? S4 : S0;
-      S5: next_state = x_i ? S6 : S0;
-      S6: next_state = x_i ? S3 : S7;
-      S7: next_state = x_i ? S8 : S0;
-      S8: next_state = x_i ? S9 : S0;
-      S9: next_state = x_i ? S3 : S10;
-      S10: next_state = x_i ? S11 : S0;
-      S11: next_state = x_i ? S2 : S0;
-     //S12: next_state = x_i ? S1 : S0;
-      default: next_state = S0;
+      S0: next_state <= x_i ? S1 : S0;
+      S1: next_state <= x_i ? S2 : S0;
+      S2: next_state <= x_i ? S3 : S0;
+      S3: next_state <= x_i ? S3 : S4;
+      S4: next_state <= x_i ? S4 : S0;
+      S5: next_state <= x_i ? S6 : S0;
+      S6: next_state <= x_i ? S3 : S7;
+      S7: next_state <= x_i ? S8 : S0;
+      S8: next_state <= x_i ? S9 : S0;
+      S9: next_state <= x_i ? S3 : S10;
+      S10: next_state <= x_i ? S11 : S0;
+      S11: next_state <= x_i ? S2 : S0;
+      default: next_state <= S0;
     endcase
   end
 
