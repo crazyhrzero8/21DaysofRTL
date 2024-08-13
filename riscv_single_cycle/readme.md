@@ -12,7 +12,6 @@ T(execution)=instructions * CPI(cycle/instruction) * Tc(sec/cycle)
 =16*1*330= 5.28ns....
 
 ```
-
 main: 
 
     addi x2, x0, 5          # Load immediate value 5 into register x2
@@ -58,3 +57,5 @@ done:
 
 ```
 
+The picture to understand the instructions path with data and instruction control
+![image](https://github.com/user-attachments/assets/5a6718f0-b343-480a-ad96-feca7542e708)
